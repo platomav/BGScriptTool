@@ -408,7 +408,7 @@ class Operand:
         if self.op_type == 'flash':
             self.op_str = 'F%X' % self.op_value
         elif self.op_type == 'buff':
-            self.op_str = 'B' + str(self.op_value)
+            self.op_str = 'B%X' % self.op_value
         elif self.op_type == 'reg':
             self.op_str = 'I%X' % self.op_value
         elif self.op_type == 'imm':
